@@ -35,7 +35,7 @@ section > h1 {
     font-family: "Krona One", sans-serif;
 }
 
-section > h1 > strong {
+section > h1 > .titulo-destaque {
     color: #22D4FD;
 }
 
