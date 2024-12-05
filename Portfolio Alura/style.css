@@ -14,13 +14,15 @@ body {
 main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
+    display: flex;
+    flex-flow: column wrap;
     padding: 10px;
     align-self: center;
     width: 500px;
@@ -46,9 +48,11 @@ section > p {
 }
 
 section > a {
+    flex-direction: row;
     color: black;
     font-weight: 600;
     background-color: #22D4FD;
+    width: 100px;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
