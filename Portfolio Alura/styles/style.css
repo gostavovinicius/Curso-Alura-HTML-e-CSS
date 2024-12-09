@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-primaria: #222831;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #00ADB5;
+    --cor-hover: #393E46;
+
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -9,9 +19,9 @@
 
 body {
     box-sizing: border-box;
-    background-color: black;
-    color: #F6F6F6;
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria)
 }
 
 .cabecalho {
@@ -24,10 +34,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -47,11 +57,11 @@ body {
 
 .apresentacao__conteudo > h1 {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .apresentacao__conteudo > h1 > .titulo-destaque {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo > p {
@@ -61,7 +71,7 @@ body {
 }
 
 .apresentacao__links > h2 {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-principal);
     font-weight: 400;
     text-align: center;
 }
@@ -77,9 +87,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     font-weight: 600;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
     width: 378px;
     gap: 16px;
     padding: 21.5px 0;
@@ -90,20 +100,20 @@ body {
 }
 
 .apresentacao__conteudo > div > .apresentacao__links__link:hover {
-    background-color: #272727;
-    color: #22D4FD;
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
 }
 
 .perfil {
     align-self: center;
     width: 488px;
     border-radius: 16px;
-    box-shadow: 3px 3px 5px #22d5fdcb;
+    box-shadow: 3px 3px 5px var(--cor-terciaria);
 }
 
 footer {
     padding: 30px;
     text-align: center;
     color: black;
-    background-color: #22D4FD;
+    background-color: var(--cor-terciaria);
 }
